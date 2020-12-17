@@ -1,0 +1,85 @@
+.skills {
+  padding-top: 98px;
+  padding-bottom: 77px; }
+  .skills-title {
+    font-size: 22px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #515151;
+    border-left: 3px solid #5AC8FB;
+    padding: 9px 0 6px 18px;
+    margin-bottom: 37px; }
+  .skills-subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #515151;
+    margin-bottom: 20px; }
+    .skills-subtitle__border {
+      border-bottom: 5px solid #ebebeb;
+      padding-bottom: 13px;
+      line-height: 1.5;
+      position: relative; }
+    .skills-subtitle__border::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -12%;
+      left: 0;
+      background-color: #5ac8fb;
+      width: 80%;
+      height: 5px; }
+  .skills-button {
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #5ac8fb;
+    padding: 6px 35px;
+    border: 0;
+    cursor: pointer;
+    outline: none; }
+  .skills-button:hover {
+    background: #28b7fa; }
+  .skills-image {
+    margin-right: 14px; }
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .skills-block {
+    max-width: 400px;
+    margin-bottom: 20px; } }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-block {
+    margin: 0 auto;
+    max-width: 450px;
+    padding-bottom: 20px; }
+
+  .skills-title {
+    margin-left: 10px; } }
+@media (min-width: 426px) and (max-width: 768px) {
+  .skills {
+    padding-top: 60px; }
+    .skills-block {
+      margin: 0 auto;
+      max-width: 450px;
+      padding-bottom: 20px; }
+    .skills-title {
+      margin-left: 10px; } }
+@media (min-width: 376px) and (max-width: 425px) {
+  .skills {
+    padding-top: 40px; }
+    .skills-block {
+      margin: 0 auto;
+      max-width: 450px;
+      padding-bottom: 20px; } }
+@media (min-width: 320px) and (max-width: 375px) {
+  .skills {
+    padding-top: 30px; }
+    .skills-block {
+      margin: 0 auto;
+      max-width: 450px;
+      padding-bottom: 20px; } }
