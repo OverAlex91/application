@@ -6,7 +6,13 @@
 
 @import url('../css/skills.css');
 
+/* импорт блока reviews */
 
+@import url('../css/reviews.css');
+
+/* импорт блока brands */
+
+@import url('../css/brands.css');
 
 /*переменные приложения*/
 

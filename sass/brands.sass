@@ -1,0 +1,80 @@
+.brands
+	padding-top: 53px
+	padding-bottom: 61px
+	&-box
+		opacity: 0.48
+		background-color: #ffffff
+		cursor: pointer
+	&-box img
+		margin: 0 auto
+		max-height: 61px
+		object-fit: cover
+	&-slider_prev, 
+	&-slider_next
+		font-size: 0
+		line-height: 0
+		position: absolute
+		top: 50%
+		display: block
+		width: 20px
+		height: 20px
+		padding: 0
+		-webkit-transform: translate(0, -50%)
+		-ms-transform: translate(0, -50%)
+		transform: translate(0, -50%)
+		cursor: pointer
+		color: transparent
+		border: none
+		outline: none
+		background: transparent
+
+	&-slider_prev
+		left: -25px
+
+	&-slider_next
+		right: -25px
+
+
+@media (max-width: 590px)
+
+	.brands
+		&-slider
+			width: 420px
+			margin: 0 auto
+		&-slider_prev
+			left: -3%
+		&-slider_next
+			right: -3%
+
+@media (max-width: 450px)
+	
+	.brands
+		&-slider
+			width: 390px
+			margin: 0 auto
+		&-slider_prev
+			left: -3%
+		&-slider_next
+			right: -3%
+
+@media (max-width: 425px)
+	
+	.brands
+		&-slider
+			max-width: 300px
+			margin: 0 auto
+		&-slider_prev
+			left: -10%
+		&-slider_next
+			right: -10%
+
+@media (max-width: 375px)
+	
+	.brands
+		&-slider
+			max-width: 80%
+			margin: 0 auto
+		&-slider_prev
+			left: -10%
+		&-slider_next
+			right: -10%
