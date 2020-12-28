@@ -7,6 +7,8 @@
 	<title>Nine Features Of An Advertising Flop</title>
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 
 
@@ -322,7 +324,141 @@
 		</div>
 		<!-- /.container -->
 	</section>
-
+	<section class="reviews" id="reviews">
+		<div class="container">
+			<div class="reviews_slider">
+				<div class="col-12">
+					<div class="reviews-box">
+						<div class="reviews-box__title">Advertising Outdoors</div>
+						<div class="reviews-box__subtitle">Write On Your Business Card</div>
+						<div class="reviews-box__photo"><img src="img/reviews/photo_reviews_1.jpeg" alt="review-1"></div>
+						<div class="reviews-box__text">Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make your business recognizable and earn more sales of course you need to come up with attractive prints that will make you stand out. And</div>
+						<div class="reviews-box__span">You Name</div>
+					</div>
+				</div>
+				<!-- /.col-12 -->
+				<div class="col-12">
+					<div class="reviews-box">
+						<div class="reviews-box__title">Advertising Outdoors</div>
+						<div class="reviews-box__subtitle">Write On Your Business Card</div>
+						<div class="reviews-box__photo"><img src="img/reviews/photo_reviews_2.jpg" alt="reviews-2"></div>
+						<div class="reviews-box__text">Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make your business recognizable and earn more sales of course you need to come up with attractive prints that will make you stand out. And</div>
+						<div class="reviews-box__span">You Name</div>
+					</div>
+				</div>
+				<!-- /.col-12 -->
+				<div class="col-12">
+					<div class="reviews-box">
+						<div class="reviews-box__title">Advertising Outdoors</div>
+						<div class="reviews-box__subtitle">Write On Your Business Card</div>
+						<div class="reviews-box__photo"><img src="img/reviews/photo_reviews_3.jpg" alt="reviews-3"></div>
+						<div class="reviews-box__text">Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make your business recognizable and earn more sales of course you need to come up with attractive prints that will make you stand out. And</div>
+						<div class="reviews-box__span">You Name</div>
+					</div>
+				</div>
+				<!-- /.col-12 -->
+			</div>
+			<!-- /.reviews_slider -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /#reviews.reviews -->
+	<section class="brands" id="brands">
+		<div class="container">
+			<div class="brands-slider">
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-1.svg" alt="pic1">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-2.svg" alt="pic2">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-3.svg" alt="pic3">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-4.svg" alt="pic4">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-1.svg" alt="pic1">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-2.svg" alt="pic2">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-3.svg" alt="pic3">
+				</div>
+				<!-- /.brands-box -->
+				<div class="brands-box">
+					<img src="img/brands/brand-pic-4.svg" alt="pic4">
+				</div>
+				<!-- /.brands-box -->
+			</div>
+			<!-- /.brands-slider -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /#brands.brands -->
 </body>
 
-</html>
+<script type='text/javascript' src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src='slick/slick.min.js'></script>
+<script>
+	$('.reviews_slider').slick({
+		dots: true,
+		swipeToSlide: true,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		arrows: false,
+		dotsClass: 'reviews_slider_dots'
+	});
+
+	$('.brands-slider').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 6,
+		centerMode: false,
+		prevArrow: '<button type="button" class="brands-slider_prev"><img src="img/brands/fa-angle-left.svg" alt=""></button>',
+		nextArrow: '<button type="button" class="brands-slider_next"><img src="img/brands/fa-angle-left copy.svg" alt=""></button>',
+		responsive: [{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 590,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 425,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
+	});
+</script></html>
