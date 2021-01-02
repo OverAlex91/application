@@ -14,6 +14,10 @@
 
 @import url('../css/brands.css');
 
+/* импорт блока footer*/
+
+@import url('../css/footer.css');
+
 /*переменные приложения*/
 
 :root {
@@ -43,7 +47,7 @@ body {
 	height: 90px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.43);
 	position: relative;
-	z-index: 3;
+	z-index: 1;
 }
 
 
@@ -104,12 +108,17 @@ body {
 /* начало стилей для блока main*/
 
 .main {
-	height: 709px;
-	position: relative;
 	text-align: center;
-	background: url('../img/header/background.jpg') center no-repeat;
-	background-size: cover;
+	position: relative;
 	top: -90px;
+}
+
+.main-slide {
+	min-height: 709px !important;
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	z-index: 0;
 }
 
@@ -120,7 +129,7 @@ body {
 	top: 45%;
 }
 
-.main::after {
+.main-slide::after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -132,21 +141,30 @@ body {
 }
 
 .main__arrow {
+	font-size: 0;
+	line-height: 0;
 	position: absolute;
-}
-
-.main__arrow:hover {
+	top: 60%;
+	display: block;
+	width: 16px;
+	height: 29px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+	z-index: 5;
 }
 
 .left {
-	top: 51px;
-	left: 20px;
+	left: 20%;
 }
 
 .right {
-	bottom: 46px;
-	right: 30px;
+	right: 20%;
 }
 
 .main__text h3 {
@@ -337,6 +355,14 @@ body {
 		right: 8%;
 	}
 
+	.left {
+		left: 10%;
+	}
+
+	.right {
+		right: 10%;
+	}
+
 }
 
 
@@ -353,7 +379,18 @@ body {
 	}
 
 	.main__content {
-		width: 940px;
+		width: 80%;
+		top: 50%;
+		left: -10%;
+		transform: translate(25%, -25%);
+	}
+
+	.left {
+		left: 8%;
+	}
+
+	.right {
+		right: 8%;
 	}
 
 	.pt-40px {
@@ -526,9 +563,9 @@ body {
 	}
 
 	.main__content {
-		width: 87%;
-		top: 50%;
-		left: -15%;
+		width: 80%;
+		top: 40%;
+		left: -10%;
 		transform: translate(25%, -25%);
 	}
 
@@ -663,8 +700,9 @@ body {
 	}
 
 	.main__content {
-		width: 92%;
+		width: 80%;
 		top: 30%;
+		left: 10%;
 	}
 
 	.main__text h3 {
@@ -805,13 +843,14 @@ body {
 		height: 60px;
 	}
 
-	.main {
+	.main-slide {
 		height: 600px;
 	}
 
 	.main__content {
-		width: 92%;
-		top: 40%;
+		width: 80%;
+		top: 35%;
+		left: 10%;
 	}
 
 	.main__text h3 {
@@ -961,14 +1000,15 @@ body {
 		height: 60px;
 	}
 
-	.main {
+	.main-slide {
 		height: 600px;
 	}
 
 
 	.main__content {
-		width: 88%;
+		width: 80%;
 		top: 40%;
+		left: 10%;
 	}
 
 	.main__text h3 {
@@ -983,12 +1023,12 @@ body {
 	}
 
 	.left {
-		left: 2px;
+		left: 6px;
 		top: 50%;
 	}
 
 	.right {
-		right: 0;
+		right: 6px;
 		top: 50%;
 	}
 
