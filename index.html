@@ -50,6 +50,12 @@
 	</header>
 	<!-- /.header -->
 	<section class="main">
+		<div class="main-slider">
+			<div class="main-slide" style="background-image:url('./img/header/background1.jpg')"></div>
+			<div class="main-slide" style="background-image:url('./img/header/background4.jpg')"></div>
+			<div class="main-slide" style="background-image:url('./img/header/background5.jpg')"></div>
+			<div class="main-slide" style="background-image:url('./img/header/background6.jpg')"></div>
+		</div>
 		<div class="container">
 			<div class="main__content">
 				<div class="row justify-content-center">
@@ -60,15 +66,9 @@
 				<!-- /.row -->
 				<div class="row justify-content-center align-items-center">
 					<div class="col-12">
-						<div class="main__arrow left">
-							<img src="img/header/fa-angle-left.svg" alt="angle-left">
-						</div>
 						<div class="main__text">
 							<h3>Nine Features Of An Advertising Flop</h3>
 							<span>Getting Free Publicity For Your Business</span>
-						</div>
-						<div class="main__arrow right">
-							<img src="img/header/fa-angle-left%20copy.svg" alt="angle-right">
 						</div>
 					</div>
 				</div>
@@ -404,6 +404,61 @@
 		<!-- /.container -->
 	</section>
 	<!-- /#brands.brands -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+					<div class="footer-block">
+						<h2 class="footer-title">Kevin Pratt</h2>
+						<p class="footer-subtitle">I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. However, I’m going to have to admit</p>
+						<div class="footer-icons">
+							<a class="footer-icons__anchor" href="http://youtube.com" target="_blank"><img src="img/footer/fa-youtube-play.svg" alt="youtube"></a>
+							<a class="footer-icons__anchor" href="http://twitter.com" target="_blank"><img src="img/footer/fa-twitter-square.svg" alt="twitter"></a>
+							<a class="footer-icons__anchor" href="http://facebook.com" target="_blank"><img src="img/footer/fa-facebook-square.svg" alt="facebook"></a>
+							<a class="footer-icons__anchor" href="http://github.com" target="_blank"><img src="img/footer/fa-github-square.svg" alt="github"></a>
+						</div>
+					</div>
+					<!-- /.footer-block -->
+				</div>
+				<!-- /.col-4 -->
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+
+					<div class="footer-block">
+						<h2 class="footer-title">Gabriel Davidson</h2>
+						<p class="footer-subtitle text-color"><img src="img/footer/fa-location-arrow.svg" alt="arrow" class="footer-subtitle__img">I want to talk about to things that are quite</p>
+						<p class="footer-subtitle text-color"><img src="img/footer/fa-phone.svg" alt="phone" class="footer-subtitle__img">Advertising Outdoors</p>
+						<p class="footer-subtitle text-color"><img src="img/footer/fa-unlock-alt.svg" alt="unlock" class="footer-subtitle__img">6 Powerful Tips To Creating Testimonials That Sell </p>
+					</div>
+					<!-- /.footer-block -->
+				</div>
+				<!-- /.col-4 -->
+
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+					<div class="footer-block">
+						<h2 class="footer-title">Robert Watkins</h2>
+						<div class="footer-img-row">
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400W7aePBt0H4mr@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400Ft3PQP6PAFLh@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-14002Tqn8GkVuVlJ@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-14008CKo4YNoZFdj@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400hPeimUMTZ65B@1X.jpeg" alt="img"></div>
+						</div>
+						<div class="footer-img-row">
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400Vi0n5A3iZyeT@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-14004Zf36Mjg45M4@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400p6ikxt5Bma30@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400K3uPVsVlBjy0@1X.jpeg" alt="img"></div>
+							<div class="footer-img-row__box"><img src="img/footer/photos-1400uyYfo3WTVtUH@1X.jpeg" alt="img"></div>
+						</div>
+					</div>
+					<!-- /.footer-block -->
+				</div>
+				<!-- /.col-4 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</footer>
 </body>
 
 <script type='text/javascript' src="js/jquery-1.8.3.min.js"></script>
@@ -461,4 +516,17 @@
 			}
 		]
 	});
-</script></html>
+
+	$('.main-slider').slick({
+		arrows: true,
+		dots: false,
+		prevArrow: '<button type="button" class="main__arrow left"><img src="img/header/fa-angle-left.svg" alt="angle-left"></button>',
+		nextArrow: '<button type="button" class="main__arrow right"><img src="img/header/fa-angle-left%20copy.svg" alt="angle-right"></button>',
+		customPaging: function() {
+			return ''
+		}
+	})
+
+</script>
+
+</html>
